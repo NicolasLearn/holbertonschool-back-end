@@ -16,7 +16,7 @@ def get_users(ID):
     # Sets Urls to share info with the API.
     api_url = "https://jsonplaceholder.typicode.com"
     user_url = "{}/users/{}".format(api_url, ID)
-    user_tasks_url = "{}/todos".format(user_url, ID)
+    user_tasks_url = "{}/todos".format(user_url)
 
     # HTTP Request to get the Name of the employee.
     user = requests.get(user_url).json()
